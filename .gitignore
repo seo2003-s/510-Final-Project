@@ -201,6 +201,18 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# Ignore data and results
+data/
+results/
+
+# Ignore sensitive files (if any)
+.env
+kaggle.json
+
+# Python cache
+__pycache__/
+*.pyc
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
