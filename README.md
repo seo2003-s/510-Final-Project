@@ -15,16 +15,21 @@ The goal of this project is to analyze the datasets related to cardiovascular he
 I first loaded the three datasets and standardized the variables to a common name which were age, sex, cholesterol, resting blood pressure, and target. From there I cleaned the data and created histograms, box plots, scatter plots, and found additional summary statistics for the variables. I then checked if assumptions are met before modelling, including independence, VIF values and logit plots. A logistic regression model was then made with the likelihood ratio test, Wald test and the Odds-Ratio test to find the most significant predictor. 
 
 ## Results
-Combined dataset: 5,883 rows after cleaning across three sources
-VIF values: All near 1.0, indicating no multicollinearity among features
-Model AUC: 0.75, showing the model is strong
-Accuracy: 0.51 at threshold 0.3 (prioritizes recall over precision)
+- Combined dataset: 5,883 rows after cleaning across three sources
+- VIF values: All near 1.0, indicating no multicollinearity among features
+- Model AUC: 0.75, showing the model is strong
+- Accuracy: 0.51 at threshold 0.3 (prioritizes recall over precision)
 Recall: 0.86, the model correctly identifies 86% of heart disease cases
 Durbin-Watson: 1.67, suggesting no significant autocorrelation in residuals
-Strongest predictors: Resting blood pressure (odds ratio 2.1) were the strongest predictors of heart disease, followed by cholesterol (1.81) and sex(1.62)
+Strongest predictors: Resting blood pressure and sex (odds ratio 1.86) were the strongest predictors of heart disease, followed by cholesterol (1.71) and age (1.38)
 Statistical significance: All four features were statistically significant (p < 0.001)
 
 ## 1. Setup
+Download the Cardiovascular Disease Dataset manually from:
+```bash
+https://data.mendeley.com/datasets/dzz48mvjht/
+```
+Proceed to run this:
 ```bash
 git clone https://github.com/seo2003-s/510-Final-Project.git
 cd 510-Final-Project
