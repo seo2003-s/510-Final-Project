@@ -19,10 +19,10 @@ I first loaded the three datasets and standardized the variables to a common nam
 - VIF values: All near 1.0, indicating no multicollinearity among features
 - Model AUC: 0.75, showing the model is strong
 - Accuracy: 0.51 at threshold 0.3 (prioritizes recall over precision)
-Recall: 0.86, the model correctly identifies 86% of heart disease cases
-Durbin-Watson: 1.67, suggesting no significant autocorrelation in residuals
-Strongest predictors: Resting blood pressure and sex (odds ratio 1.86) were the strongest predictors of heart disease, followed by cholesterol (1.71) and age (1.38)
-Statistical significance: All four features were statistically significant (p < 0.001)
+- Recall: 0.86, the model correctly identifies 86% of heart disease cases
+- Durbin-Watson: 1.67, suggesting no significant autocorrelation in residuals
+- Strongest predictors: Resting blood pressure and sex (odds ratio 1.86) were the strongest predictors of heart disease, followed by cholesterol (1.71) and age (1.38)
+- Statistical significance: All four features were statistically significant (p < 0.001)
 
 ## 1. Setup
 Download the Cardiovascular Disease Dataset manually from:
