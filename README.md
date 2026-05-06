@@ -4,6 +4,13 @@
 The goal of this project is to analyze the datasets related to cardiovascular health including heart disease, heart failure, and general cardiovascular disease. Although the datasets focus on slightly different conditions, they contain many similar health indicators such as age, blood pressure, cholesterol levels, gender, and heart rate. Using these, I found the most significant predictors associated with these conditions.
  
 ## Data Sources 
+
+| # | Dataset | Source URL | Access Type | Fields Used | Format | Python Access |
+|---|---------|-----------|-------------|-------------|--------|---------------|
+| 1 | Framingham Heart Disease Dataset | [Kaggle](https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset/data) | API | age, sex, totChol, sysBP, TenYearCHD | CSV | Yes (kagglehub) |
+| 2 | Heart Failure Prediction Dataset | [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction/data) | API | Age, Sex, Cholesterol, RestingBP, HeartDisease | CSV | Yes (kagglehub) |
+| 3 | Cardiovascular Disease Dataset | [Mendeley](https://data.mendeley.com/datasets/dzz48mvjht/) | Web Page | age, gender, serumcholestrol, restingBP, target | CSV | No (manual download) |
+
 ## Analysis 
 I first loaded the three datasets and standardized the variables to a common name which were age, sex, cholesterol, resting blood pressure, and target. From there I cleaned the data and created histograms, box plots, scatter plots, and found additional summary statistics for the variables. I then checked if assumptions are met before modelling, including independence, VIF values and logit plots. A logistic regression model was then made with the likelihood ratio test, Wald test and the Odds-Ratio test to find the most significant predictor. 
 
