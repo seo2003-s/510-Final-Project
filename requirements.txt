@@ -1,8 +1,10 @@
+kagglehub
 pandas
 numpy
 scikit-learn
+statsmodels
 matplotlib
 seaborn
-statsmodels
-kaggle
-scipy
+python-dotenv
+jupyter
+pytest
